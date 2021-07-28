@@ -1,0 +1,56 @@
+import LLodash from "lodash";
+import LAxios from "axios";
+import LJquery from "jquery";
+import Flatpickr from 'flatpickr';
+import LSweetalert2 from 'sweetalert2';
+import 'popper.js/dist/popper'
+import {Spanish} from "flatpickr/dist/l10n/es";
+
+window._ = LLodash;
+window.$ = window.jQuery = LJquery;
+window.axios = LAxios;
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+Flatpickr.localize(Spanish);
+window.flatpickr = Flatpickr;
+window.swal = LSweetalert2;
+
+/**
+ * We'll load the axios HTTP library which allows us to easily issue requests
+ * to our Laravel back-end. This library automatically handles sending the
+ * CSRF token as a header based on the value of the "XSRF" token cookie.
+ */
+
+let token = document.head.querySelector('meta[name="csrf-token"]');
+if (token) {
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+}
+else {
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
+
+/**
+ * Calendar.
+ */
+window.flatpickr(".calendar", {
+  dateFormat: "d-m-Y",
+  animate: true,
+});
+
+/**
+ * Calendar range.
+ */
+window.flatpickr(".calendar-range", {
+  dateFormat: "d-m-Y",
+  mode: 'range'
+});
+
+/**
+ * Calendar time.
+ */
+window.flatpickr(".calendar-time", {
+  enableTime: true,
+  noCalendar: true,
+  dateFormat: "H:i",
+  time_24hr: true
+});
+

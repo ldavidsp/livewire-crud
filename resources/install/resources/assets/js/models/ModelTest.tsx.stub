@@ -1,0 +1,15 @@
+/**
+ * Export Model Products.
+ */
+export interface ModelTest {
+	name: string;
+	code: string;
+	cost: number;
+	price: number;
+	description: string;
+	stock_alert: number;
+	mark: string;
+	size: string;
+}
+
+

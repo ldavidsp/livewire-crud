@@ -1,0 +1,39 @@
+.btn-brand {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  border-radius: rem(8px);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-brand--dark);
+    border-color: var(--color-brand--dark);
+  }
+}
+
+.btn-brand--white {
+  align-items: center;
+  background: $white;
+  border-color: rgba(96, 125, 139, 0.12941176470588237);
+  border-radius: 2.35rem !important;
+  border-width: 2px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  color: var(--color-brand);
+  display: flex;
+  font-weight: bold;
+  min-height: rem(49px);
+  outline: 0;
+  padding: rem(10px);
+  width: auto;
+
+  &:hover {
+    border-color: var(--color-brand--dark);
+    border-width: 2px;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+    color: var(--color-brand--dark);
+  }
+}
+
+.btn-rounded {
+  border-radius: 2.35rem !important;
+}
+

@@ -1,0 +1,12 @@
+.delay-0-5s {
+  animation-delay: 0.5s;
+}
+
+.delay-0-3s {
+  animation-delay: 0.3s !important;
+}
+
+.animate__animated-both {
+  animation-fill-mode: both !important;
+}
+

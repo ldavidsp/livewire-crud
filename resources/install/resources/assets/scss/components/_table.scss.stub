@@ -1,0 +1,45 @@
+/**
+ * Table Styles
+ */
+.table {
+  td,
+  th {
+    vertical-align: middle;
+  }
+
+  thead th {
+    border-bottom: 2px solid #dee2e6;
+    padding: 0.75rem;
+    vertical-align: bottom;
+  }
+
+  > :not(:last-child) > :last-child > * {
+    border-bottom-color: #dee2e6;
+  }
+
+  tr {
+    height: auto;
+    overflow: hidden;
+    transition: transform 1s;
+  }
+}
+
+.actions {
+  align-items: center;
+  background: #e9ecef;
+  border-radius: 60px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  vertical-align: middle;
+  width: 40px;
+
+  &:hover {
+    background: var(--color-brand);
+
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+}
+

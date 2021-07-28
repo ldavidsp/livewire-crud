@@ -1,0 +1,31 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+// Variables
+@import 'pxtorem';
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap';
+
+/**
+ * Theme App
+ */
+@import '~flatpickr';
+@import '~animate.css';
+@import 'components/global';
+@import 'components/font-weight';
+@import 'components/photos';
+@import 'components/navbar';
+@import 'components/cards';
+@import 'components/dropdown';
+@import 'components/buttons';
+@import 'components/background';
+@import 'components/colors';
+@import 'components/table';
+@import 'components/paginators';
+@import 'components/modals';
+@import 'components/form';
+@import 'components/animate';
+
+

@@ -1,0 +1,6 @@
+(() => {
+  window.livewire.on('closeModal', () => {
+  	document.getElementById('exampleModal').modal('hide');
+  });
+})();
+

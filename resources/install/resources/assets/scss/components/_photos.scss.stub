@@ -1,0 +1,28 @@
+.branding {
+  position: absolute;
+  top: rem(15px);
+}
+
+.articles {
+  border-radius: 100%;
+  box-shadow: 0 rem(4px) rem(6px) rgb(0 0 0 / 10%);
+  padding: rem(5px);
+}
+
+.user-photo {
+  border: rem(3px) solid var(--color-brand);
+  border-radius: 100%;
+  box-shadow: 0 rem(4px) rem(6px) rgb(0 0 0 / 10%);
+  height: rem(40px) !important;
+  margin: 0 auto;
+  padding: rem(3px);
+  width: rem(40px) !important;
+}
+
+.article-photo {
+  border-radius: rem(100px);
+
+  img {
+    border-radius: rem(10px);
+  }
+}

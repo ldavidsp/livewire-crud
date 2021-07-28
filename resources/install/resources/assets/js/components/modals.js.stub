@@ -1,0 +1,19 @@
+(() => {
+	/**
+	 * Remove animate open modal.
+	 */
+	document.querySelectorAll('div.modal').forEach(value => {
+		value.addEventListener('show.bs.modal', () => {
+			document.getElementById('content-app').classList.remove('animate__animated');
+		});
+	});
+
+	/**
+	 * Add animate close modal.
+	 */
+	document.querySelectorAll('div.modal').forEach(value => {
+		value.addEventListener('hide.bs.modal', () => {
+			document.getElementById('content-app').classList.add('animate__animated');
+		});
+	});
+})();

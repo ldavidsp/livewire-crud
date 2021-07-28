@@ -1,0 +1,45 @@
+.bg-content {
+  background-color: $background !important;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: rem(10px) !important;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.form-control[readonly] {
+  background-color: transparent !important;
+  opacity: 1;
+}
+
+.custom-file-upload {
+  cursor: pointer;
+  height: rem(40px);
+  margin-left: rem(90px);
+  margin-top: rem(100px);
+  position: absolute;
+  width: rem(40px);
+
+  i {
+    background: $white;
+    border-radius: 100%;
+  }
+}
+
+label {
+  opacity: 0.65;
+}
+
+hr {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  border: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+

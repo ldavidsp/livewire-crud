@@ -1,0 +1,2 @@
+{{-- Component title --}}
+<x-slot name="title">{{ $slot }}</x-slot>

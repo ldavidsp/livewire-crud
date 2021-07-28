@@ -1,0 +1,7 @@
+/**
+ * Convert px to rem.
+ */
+@use 'sass:math';
+@function rem($size) {
+  @return ($size / 16px) + rem;
+}

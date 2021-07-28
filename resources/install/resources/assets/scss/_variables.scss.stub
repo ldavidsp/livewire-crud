@@ -1,0 +1,40 @@
+// Typography
+$font-family-sans-serif: 'Montserrat',sans-serif !important;
+$font-montserrat: 'Montserrat', sans-serif !important;
+$font-family-base: $font-montserrat;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$bg: #f0f1f3;
+$bg-two: #f8f9fa;
+$brand: #ad8631;
+$brand-dark: #825b07;
+$white: #fff;
+$blue: #3490dc;
+$blue2: #14affc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #f04d56;
+$orange: #f6993f;
+$yellow: #f8a831;
+$green: #34a853;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$background: $bg-two;
+
+// Body
+//$body-bg: $white !default;
+$body-bg: $bg-two !default;
+
+:root {
+  --color-bg: #f0f1f3;
+  --color-brand: #ad8631;
+  --color-brand--dark: #825b07;
+  --color-border: #f0f1f3;
+  --color-red: #f04d56;
+  --color-white: #fff;
+}
+
+

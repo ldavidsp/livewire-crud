@@ -23,7 +23,7 @@ return [
     | views for crud. Default will be the "layouts.app".
     */
 
-    'layout' => 'layouts.app',
+    'layout' => 'components.layouts.app',
 
     'model' => [
         'namespace' => 'App\Models',

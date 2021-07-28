@@ -1,0 +1,9 @@
+/** Import first libraries */
+import './libs/libraries'
+import './libs/bootstrap'
+
+/** Import components React TypeScript */
+import './components/Example'
+import './components/modals'
+import './components/livewire'
+

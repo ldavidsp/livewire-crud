@@ -1,0 +1,47 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "ignoreFiles": [
+    "./node_modules/**/*.css",
+    "./node_modules/**/*.scss",
+    "./node_modules/**/*.sass",
+    "./node_modules/**/*.less",
+    "./vendor/**/*.less",
+    "./vendor/**/*.scss",
+    "./vendor/**/*.sass",
+    "./vendor/**/*.css"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "block-no-empty": true,
+    "declaration-colon-space-after": "always",
+    "selector-max-compound-selectors": null,
+    "selector-no-qualifying-type": null,
+    "selector-class-pattern": null,
+    "max-nesting-depth": [
+      6,
+      {
+        "ignore": [
+          "pseudo-classes"
+        ]
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "message": "Please use 2 spaces for indentation.",
+        "severity": "warning"
+      }
+    ],
+    "no-descending-specificity": null,
+    "order/properties-alphabetical-order": true,
+    "scss/dollar-variable-colon-space-after": "always-single-line",
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ]
+  }
+}
+
