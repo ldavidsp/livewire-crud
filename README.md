@@ -13,12 +13,12 @@ More detailed documentation can ne found at [livewire-crud](https://flightsadmin
 You can install the package via [Composer](https://getcomposer.org/):
 
 ```bash
-composer require flightsadmin/livewire-crud
+composer require ldavidsp/livewire-crud
 ```
 
 ## Usage
 
-After running `composer require flightsadmin/livewire-crud` command just run:
+After running `composer require ldavidsp/livewire-crud` command just run:
 
 ```bash
 php artisan crud:install
